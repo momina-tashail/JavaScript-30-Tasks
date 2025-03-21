@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        var x = Math.random();
+        console.log("Before calculation " + x);
+        x = x * 10000; //(100 - 1) + 1;//
+        console.log ("After calculation " + x);
+        console.log (" Floor calculation " + Math.floor (x));
+
+
+        //check a number if even or odd//
+            var x = 7;
+             if (x%2 == 0) {
+                //even
+                console.log(`${x} is an even number`);
+             } 
+             else {
+                console.log(`${x} is an odd number`);
+             }
+
+             var res = x%2 == 0 ? "even" : "odd";
+             //console.log (res); 
+             console.log(`${x} is an ${res} number`);
+
+
+             //check prime number//
+
+             var number= prompt(" Please enter a number");
+             if (number == 1){
+                console.log (`${number} is neither prime nor composite number`);
+             }  
+             else if (number < 1){
+                console.log(`${number} is not a prime number`);
+             } 
+             else{
+                //if number 15//
+                         for (var i = 2; i<number; i++){
+                            // 15%2  = R: 1 modulos % work for reminder! //
+                            //15/2 = quotient: 7  devide do Q! //
+                            if (number%i == 0){
+                                
+                                var res = `${number} is not a prime number`;
+                                break;
+                            }else {
+                                var res = `${number} is a prime number`;  
+                            }
+                         }
+                         console.log(res);
+             }
+
+                     //find largest among 3 numbers//
+
+                     function check (p,q,r){
+                        if (p>=q && p>=r){
+                           return p;
+                        } else if(q>=p && q>=r){
+                           return q;
+                        } else{
+                           return r ;
+                        }
+
+                        }
+               
+
+                    
+                  
+                     var a = prompt("please enter the first number");
+                     var b = prompt("please enter the second number");
+                     var c = prompt("please enter the third number");
+                     var x = Math.max(a,b,c);
+                   console.log(x);
+               
+                   
+              
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

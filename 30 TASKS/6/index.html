@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var string = prompt("Enter a string");
+        console.log(string);
+        var testStart = string.startsWith("M");
+        var testEnd = string.endsWith("r");
+       // console.log(`starts : ${testStart}`);
+        //console.log(`Ends : ${testEnd}`); 
+        if (testStart== true && testEnd == true){
+            console.log(` ${string} starts with M and ends with r`);
+        }
+        else if (testStart == false && testEnd == true){
+            console.log(` ${string} ends with r `);
+        }
+</script>
+</head>
+<body>
+    
+</body>
+</html>

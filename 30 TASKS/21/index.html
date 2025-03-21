@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function sum(num){
+        if (num>0){
+            return num + sum (num-1);
+            //5+4+3+2+1
+        }
+        else{
+            return num;
+
+        }
+    }
+    var res = sum (5);
+    console.log(res);
+    console.log("---------");
+
+    //factorial//
+    var number = prompt("please enter a number");
+    for (var i = 1; i<=number; i++){
+        if (number%i ==0)
+        console.log(i);
+  console.log("------");
+  
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

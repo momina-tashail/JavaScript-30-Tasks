@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var num1 =prompt("please enter a number");
+        var num2 =prompt("please enter a number");
+        var opr =prompt("please select among + , -,X, /");
+
+        switch(opr)
+        {
+            //if (opr =="+")
+              case"+":
+              var res = parseFloat(num1) + parseFloat(num2);
+              console.log(`${num1} + ${num2} = ${res}`);
+             break;
+           
+               // console.log("invalid operator");
+
+
+                //if (opr =="-")
+            case "-":
+            var res = parseFloat(num1) - parseFloat(num2);
+            console.log(`${num1} - ${num2} = ${res}`);
+                break;
+             
+                case "x":
+                var res = parseFloat(num1) * parseFloat(num2);
+            console.log(`${num1} x ${num2} = ${res}`);
+                break;
+
+           //if (opr =="/")
+            case"/":
+              var res = parseFloat(num1) / parseFloat(num2);
+              console.log(`${num1} / ${num2} = ${res}`);
+             break;
+            default:
+           console.log("Invalid operator");
+                
+
+        }
+    </script>
+/
+</head>
+<body>
+    
+</body>
+</html>

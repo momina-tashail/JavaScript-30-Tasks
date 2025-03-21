@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+
+        //palindrome which reads forward backwards same
+        var string = prompt("please enter a string");
+        var stringArray = string.split("");
+        var stringArrayRev = stringArray.reverse();
+        var revString = stringArrayRev.join("");
+        //console.log(stringArray);
+   // console.log (revString);
+
+   if (string === revString){
+    console.log(`${string}: Is Palindrome`);
+   }
+   else{
+    console.log(`${string}: Is not Palindrome`);
+   }
+
+ //for loop
+ var string = prompt("please enter a string");
+   var len = string.length;
+   var msg = "it is a palindrome";
+   for (var i=0; i < len/2 ; i++){
+    if (string [i] !=string[len - 1 - i]){
+        msg = "it is not a palindrome";
+    }
+   }
+   console.log (`${string}: ${msg}`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
